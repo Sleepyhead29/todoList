@@ -1,0 +1,111 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+#container-1 {
+    width: 100vw;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#addSection {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+
+#userInput{
+    height: 2em;
+    width: auto;
+    box-shadow: 5px 3px 5px;
+}
+
+#main-container {
+    width: 60vw;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+#list-container {
+    margin-top: 30px;
+    text-align: center;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+
+/*Buttons */
+#addButton {
+    width: 2em;
+    font-size: 1.3em;
+}
+
+#deleteButton {
+    min-width: 20px;
+    max-height: 20px;
+    flex-grow: 0;
+
+}
+#editButton{
+    min-width: 27px;
+    max-height: 19px;
+}
+
+#itemBox {
+    max-width: 300px;
+    min-width: 10em;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    background-color: lightblue;
+    padding: 3px;
+    border: 1px solid black;
+    margin-bottom: 3px;
+}
+
+#buttonContainer{
+    display: inherit;
+    flex-direction: row-reverse;
+}
+
+ul div:last-of-type{
+    border: none;
+}
+
+li {
+    padding: 0.2em;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: start;
+    word-break: break-word;
+}
+
+/* Media Queries */
+@media screen and (min-width: 992px){
+    #main-container{
+        width: 100vw;
+    }
+    #itemBox{
+        min-width: 400px;
+    }
+    #addButton{
+        width: 3.5em;
+    }
+    #userInput{
+        width: 20%;
+    }
+}
+
+@media screen and (min-width: 576px){
+    #itemBox{
+        min-width: 200px;
+    }
+}
